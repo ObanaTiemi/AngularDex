@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css?family=Tomorrow&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+$background-nav: #cc0000;
+$background-nav-font-color: white;
+$nav-font-style: "Arial", "Tomorrow", "sans-serif";
+
+.container-fluid {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.container-red {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-red {
+  background: $background-nav;
+  margin: 0;
+  color: $background-nav-font-color;
+  font-family: $nav-font-style;
+  font-size: 26px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-red > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: $background-nav-font-color;
+}
+
+.article {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 10px;
+}
+
+.footer {
+  min-width: 100%;
+  margin: auto auto 0 auto;
+}
+
+footer.navbar-red {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+}
